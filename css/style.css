@@ -1,4 +1,4 @@
-/*Navbar*/
+/*============Navbar=====================*/
 
 .navbar-nav li {
 	padding: 10px 10px;
@@ -32,7 +32,33 @@
 	line-height: 76px;
 }
 
-/* Main content*/
+/*========Navbar-custom-jquery============*/
+
+.custom-navigation {
+	position:fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	height: 100%;
+}
+
+.clear-navigation {
+	width: 50%;
+	background: rgba(50, 50, 50, 0.5);
+	min-height: 100%;
+	display: inline-block;
+}
+
+.black-navigation {
+	display: inline-block;
+	width: 50%;
+	min-height: 100%;
+	background: darkgrey;
+}
+
+/*============== Main content=============*/
 .main-content {
 	background: url(https://a2.muscache.com/ic/discover/42?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=33b4f2);
 	background-size: cover;
@@ -72,6 +98,13 @@
 	width: 400px;
 }
 
+@media screen and (max-width: 768px){
+	.main-form input[type="text"] {
+		width: 100%;
+	}
+}
+
+
 .main-form .form-group {
 	margin-right: -2px;
 	margin-left: -2px;
@@ -103,7 +136,7 @@ border-radius: 0;
 	}
 }
 
-/* Explore */
+/*=================== Explore============= */
 .explore {
 	font-weight: bold;
 	text-align: center;
@@ -202,7 +235,7 @@ border-radius: 0;
 .carousel-inner .carousel-control {
 	background-image: none;
 }
-/*Our Community*/
+/*=============Our Community==============*/
 .our-community h2 {
 	color: rgb(72, 72, 72);
 	font-weight: bold;
@@ -240,7 +273,7 @@ border-radius: 0;
  	background-color: rgba(50, 50, 50, 0.7);
  }
 
-	/*Footer*/
+	/*=================Footer=============*/
 
 footer {
 	padding: 70px 180px;
