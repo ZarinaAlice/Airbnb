@@ -1,4 +1,4 @@
-/*============Navbar=====================*/
+/*==============================Navbar=================================================*/
 
 .navbar-nav li {
 	padding: 10px 10px;
@@ -32,7 +32,7 @@
 	line-height: 76px;
 }
 
-/*========Navbar-custom-jquery============*/
+/*=====================================Navbar-custom-jquery=================================*/
 
 .custom-navigation {
 	position:fixed;
@@ -49,16 +49,44 @@
 	background: rgba(50, 50, 50, 0.5);
 	min-height: 100%;
 	display: inline-block;
+
+}
+
+.clear-navigation:hover {
+	cursor: pointer;
 }
 
 .black-navigation {
+	background-image: url(../images/footer.png);
 	display: inline-block;
 	width: 50%;
 	min-height: 100%;
-	background: darkgrey;
+	text-align: center;
+	padding-top:  100px;
+	padding-bottom: 150px;
+	overflow: auto;
 }
 
-/*============== Main content=============*/
+.black-navigation a {
+	color: white;
+	font-size:20px;
+	text-decoration: none;
+	font-family: 'Muli', sans-serif;
+}
+
+.black-navigation li {
+	padding: 10px; 10px;
+}
+
+.black-navigation ul {
+	padding-left: 0;
+}
+
+.black-navigation a:hover {
+	color: #774444;
+}
+
+/*================================= Main content==============================================*/
 .main-content {
 	background: url(https://a2.muscache.com/ic/discover/42?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=33b4f2);
 	background-size: cover;
@@ -136,7 +164,7 @@ border-radius: 0;
 	}
 }
 
-/*=================== Explore============= */
+/*======================================= Explore========================================= */
 .explore {
 	font-weight: bold;
 	text-align: center;
@@ -231,11 +259,20 @@ border-radius: 0;
 	width: 100%;
 	height: 600px;
 }
+@media screen and (max-width: 780px){
+	.carousel {
+		height: 300px;
+	}
+
+	.carousel-inner>.item> img {
+		height: 300px;
+	}
+}
 
 .carousel-inner .carousel-control {
 	background-image: none;
 }
-/*=============Our Community==============*/
+/*=====================================Our Community=======================================*/
 .our-community h2 {
 	color: rgb(72, 72, 72);
 	font-weight: bold;
@@ -273,10 +310,10 @@ border-radius: 0;
  	background-color: rgba(50, 50, 50, 0.7);
  }
 
-	/*=================Footer=============*/
+	/*===========================================Footer======================================*/
 
 footer {
-	padding: 70px 180px;
+	padding: 70px 5%;
 	color: white;
 	font-weight: 5px;
 	min-height: 470px;
@@ -351,6 +388,14 @@ footer p {
 	color: grey;
 	font-size: 14px;
 }
+
+@media screen and (max-width:768px){
+
+	footer {
+		text-align: center;
+	}
+}
+
 
 
 
